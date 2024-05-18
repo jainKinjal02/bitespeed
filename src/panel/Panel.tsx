@@ -52,7 +52,12 @@ export default function Panel({editMode, setEditMode, selectedNode, updateNodeLa
                 </div>
             </div>
             <>
-            <button onClick={saveFlow} className={`m-2 p-2 text-white rounded-md bg-${saveStatus.color}`}>{saveStatus.message}</button>
+              <button onClick={saveFlow} className={`m-2 p-2 text-white rounded-md ${
+                  saveStatus.color === 'red-500' ? 'bg-red-500' : 
+                  saveStatus.color === 'green-500' ? 'bg-green-500' : 'bg-black'
+                }`}>
+                {saveStatus.message}
+              </button>
             </>
       </div>      
       }

@@ -1,5 +1,3 @@
-import type { OnConnect } from "reactflow";
-
 import { useCallback, useRef, useState } from "react";
 import {
   Background,
@@ -86,7 +84,7 @@ export default function App() {
     [reactFlowInstance],
   );
 
-  const onNodeClick = useCallback(( e:any, node:any) => {
+  const onNodeClick = useCallback((_e:any, node:any) => {
     setSelectedNode(node);
     setEditMode(true);
   }, []);
