@@ -1,6 +1,6 @@
 # Kinjal X BiteSpeed
 
-Project deployed on Vercel - 
+Project deployed on Vercel - https://kinjalxbitespeed.vercel.app/
 
 ## Running Locally?
 
